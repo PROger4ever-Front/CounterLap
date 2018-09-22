@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Counter Lap App</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<div id="counters-container-main">
+    <div class="panel control-panel">
+        <button id="countdown-button" class="button">Countdown</button>
+        <button id="countdown-stop-button" class="button" disabled>Stop</button>
+    </div>
+    <!-- Counter in traffic light -->
+    <div id="counter1" class="counter">
+        <!-- Consists of one or several digits -->
+        <div id="counter1-digit1" class="counter-digit">
+            <!-- Every digit consists of 8 elements (lamps) with on/off, broken/working states -->
+            <div data-position="top"
+                 class="digit-element digit-element-horizontal digit-element-top digit-element-off"></div>
+            <div data-position="left-top"
+                 class="digit-element digit-element-vertical digit-element-left digit-element-top digit-element-off"></div>
+            <div data-position="right-top"
+                 class="digit-element digit-element-vertical digit-element-right digit-element-top digit-element-off"></div>
+            <div data-position="middle"
+                 class="digit-element digit-element-horizontal digit-element-middle digit-element-off"></div>
+            <div data-position="left-bottom"
+                 class="digit-element digit-element-vertical digit-element-left digit-element-bottom digit-element-off"></div>
+            <div data-position="right-bottom"
+                 class="digit-element digit-element-vertical digit-element-right digit-element-bottom digit-element-off"></div>
+            <div data-position="bottom"
+                 class="digit-element digit-element-horizontal digit-element-bottom digit-element-off"></div>
+        </div>
+        <div id="counter1-digit2" class="counter-digit">
+            <div data-position="top"
+                 class="digit-element digit-element-horizontal digit-element-top digit-element-off"></div>
+            <div data-position="left-top"
+                 class="digit-element digit-element-vertical digit-element-left digit-element-top digit-element-off"></div>
+            <div data-position="right-top"
+                 class="digit-element digit-element-vertical digit-element-right digit-element-top digit-element-off"></div>
+            <div data-position="middle"
+                 class="digit-element digit-element-horizontal digit-element-middle digit-element-off"></div>
+            <div data-position="left-bottom"
+                 class="digit-element digit-element-vertical digit-element-left digit-element-bottom digit-element-off"></div>
+            <div data-position="right-bottom"
+                 class="digit-element digit-element-vertical digit-element-right digit-element-bottom digit-element-off"></div>
+            <div data-position="bottom"
+                 class="digit-element digit-element-horizontal digit-element-bottom digit-element-off"></div>
+        </div>
+    </div>
+    <div class="panel parsing-panel">
+        <span id="digit1-parsing-result" class="digit-parsing-result">-</span>
+        <span id="digit2-parsing-result" class="digit-parsing-result">-</span>
+        <button id="parse-button" class="button">Parse</button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

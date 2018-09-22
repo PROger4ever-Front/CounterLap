@@ -1,0 +1,102 @@
+.counter {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.counter-digit {
+    display: inline-block;
+    width: 46.6%;
+    height: 100%;
+    background-color: white;
+}
+
+.counter-digit:first-child {
+    padding-right: 3%;
+}
+
+.counter-digit:last-child {
+    padding-left: 3%;
+}
+
+.counter-digit:not(:last-child):not(:first-child) {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.digit-element {
+
+}
+
+.digit-element-horizontal {
+    margin: auto;
+    width: 100%;
+    height: 5%;
+}
+
+.digit-element-vertical {
+    display: inline-block;
+    width: 5%;
+    height: 42.5%;
+}
+
+.digit-element-top {
+
+}
+
+.digit-element-middle {
+
+}
+
+.digit-element-bottom {
+
+}
+
+.digit-element-left {
+    /*margin-right: auto;
+    margin-left: 0;*/
+}
+
+.digit-element-right {
+    /*margin-left: auto;
+    margin-right: 0;*/
+    float: right;
+}
+
+.digit-element-off {
+    background-color: lightgrey;
+}
+
+.digit-element-on {
+    background-color: green;
+}
+
+.digit-element-broken {
+    background-color: white !important;
+}
+
+button {
+
+}
+
+button[disabled] {
+
+}
+
+.panel {
+    position: absolute;
+}
+
+.control-panel {
+    left: 3%;
+    top: 9%;
+}
+
+.parsing-panel {
+    right: 3%;
+    bottom: 9%;
+}
+
+.digit-parsing-result {
+
+}
